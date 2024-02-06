@@ -67,7 +67,7 @@ end
 
 function XYZ=rotate(XYZ,phi,theta,psi)
     % define rotation matrix
-    R_roll = [1 0 0; 0 cos(phi) sin(phi); 0 -sin(phi) cos(phi) ];% to be complete by students
+    R_roll = [1 0 0; 0 cos(phi) -sin(phi); 0 sin(phi) cos(phi) ];% to be complete by students
     R_pitch = [cos(theta) 0 sin(theta);0 1 0; -sin(theta) 0 cos(theta)];% to be complete by students
     R_yaw = [cos(psi) -sin(psi) 0; sin(psi) cos(psi) 0; 0 0 1];% to be complete by students
     R_b_v = R_roll*R_pitch*R_yaw;
